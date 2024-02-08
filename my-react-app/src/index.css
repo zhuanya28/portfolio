@@ -1,4 +1,4 @@
-::selection {
+::selection { 
   background-color: #F15025;
   /* Change this to the background color you want */
   color: #fff;
@@ -135,22 +135,12 @@ display: flex;
 }
 
 
-
-.contactIcons{
-  color: #000000;
-  transition: all 0.3s ease;
 }
-
-.contactIcons:hover{
-  color: #F15025;
-}
-} */
 
 
 /* INTRODUCTION */
 .introduction{
-  margin-bottom: 3%;
-    margin-right: 10%;
+  margin: 5%;
 }
 
 .introName{
@@ -187,17 +177,13 @@ display: flex;
   font-weight:300;
 }
 
-.skillsImage{
-  width: 50vw;
-}
-
 /* PROJECTS */
 
 .projects{
-  margin-right: 10%;
+ margin: 5%;
   /* font-family: 'Montserrat', sans-serif; */
   font-weight: 400;
-  padding-bottom: 2%;
+
   display: block;
 }
 
@@ -234,6 +220,7 @@ display: flex;
 }
 .projectsImages{
   width: 50vw;
+  align-content: center;
 }
 
 .projectName:hover{
@@ -298,3 +285,12 @@ cursor: pointer;
 
 /* CONTACT */
 
+
+.contactIcons{
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.contactIcons:hover{
+  color: #F15025;
+}

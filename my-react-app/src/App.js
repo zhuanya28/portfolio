@@ -13,9 +13,8 @@ function App() {
     <Router>
       <Menu />
       <Routes>
-      <Route path="/aboutme" exact elements={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/webdesign&development" element={<WebDesignDev/>} />
-     
         <Route path="/visualart" element={<VisualArt/>} />
         <Route path="/digitalart" element={<DigitalArt/>} />
       </Routes>
