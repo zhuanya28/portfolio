@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 
-
-
-
 function Project(props) {
   const [isExpanded, setIsExpanded] = useState(true);
 

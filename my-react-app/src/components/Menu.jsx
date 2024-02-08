@@ -1,118 +1,20 @@
-import Introduction from "./Introduction";
-import { webDevNDes, digitalArtNGraphDesign, visualArts } from "../data";
-import Project from "./Project";
+
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
-function fillProjects() {
-  return (
 
-     webDevNDes.map((project) => (
-        <Project
-          id={project.id}
-          name={project.name}
-          date={project.date}
-          role={project.role}
-          media={project.media}
-          description={project.description}
-          link={project.link}
-        />
-      ))
-  );
-}
-
-function fillDigArtNGraphDesProjects(currentSection) {
-  return (
-    digitalArtNGraphDesign.map((project) => (
-        <Project
-          id={project.id}
-          name={project.name}
-          date={project.date}
-          role={project.role}
-          medium={project.medium}
-          media={project.media}
-          description={project.description}
-          link={project.link}
-        />
-      ))
-      
-   
-  );
-}
-
-function fillVisualArtsProjects() {
-  return visualArts.map((project) => (
-    <Project
-      id={project.id}
-      name={project.name}
-      date={project.date}
-      medium={project.medium}
-      media={project.media}
-      description={project.description}
-    />
-  ));
-
-}
 
 function Menu() {
-  const [activeLink, setActiveLink] = useState("webDev&Des");
-  
-  const handleLinkClick = (linkId) => {
-    setActiveLink(linkId);
-    
-  };
-   
-
   return (
-    <div className="menuDiv">
-      <ul className="menuUl">
-        <li className="menuLi">
-          <button
-            onClick={() => handleLinkClick("home")}
-            className={`btn btn-outline ${
-              activeLink === "home" ? "activeMenu" : ""
-            }`}
-          >
-            home
-          </button>
-        </li>
-        <li className="menuLi">
-          <button
-            onClick={() => handleLinkClick("webDev&Des")}
-            className={`btn btn-outline ${
-              activeLink === "webDev&Des" ? "activeMenu" : ""
-            }`}
-          >
-            web development & design
-          </button>
-        </li>
-        <li className="menuLi">
-          <button
-            onClick={() => handleLinkClick("digitalArt&GraphDes")}
-            className={`btn btn-outline ${
-              activeLink === "digitalArt&GraphDes" ? "activeMenu" : ""
-            }`}
-          >
-            digital art & graphic design
-          </button>
-        </li>
-        <li className="menuLi">
-          <button
-            onClick={() => handleLinkClick("visualArt")}
-            className={`btn btn-outline ${
-              activeLink === "visualArt" ? "activeMenu" : ""
-            }`}
-          >
-            visual art
-          </button>
-        </li>
-      </ul>
-      <div>
-        {activeLink === "webDev&Des" && fillProjects()}
-        {activeLink === "home" && <Introduction />}
-        {activeLink === "digitalArt&GraphDes" && fillDigArtNGraphDesProjects()}
-        {activeLink === "visualArt" && fillVisualArtsProjects()}
-      </div>
-    </div>
+    <nav>
+    <ul>
+    <li><Link to="/aboutme">Home</Link></li>
+      <li><Link to="/webdesign&development">Web Design & Dev</Link></li>
+      <li><Link to="/visualart">Visual Art</Link></li>
+  
+      <li><Link to="/digitalart">Digital Art</Link></li>
+    </ul>
+  </nav>
   );
 }
 

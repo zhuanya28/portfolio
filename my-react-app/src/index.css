@@ -19,7 +19,10 @@ code {
 
 /* SIDEBAR */
 
-@media (max-width: 1000px) {
+
+
+
+/* @media (max-width: 1000px) {
   .menuLi {
     display: none;
     overflow: hidden;
@@ -38,7 +41,7 @@ code {
   }
         .projects {
           margin-left: 5%;
-            width: 90%;
+            width: 100%;
         }
                  .projectLine {
                    margin-left: 5%;
@@ -141,7 +144,7 @@ display: flex;
 .contactIcons:hover{
   color: #F15025;
 }
-}
+} */
 
 
 /* INTRODUCTION */

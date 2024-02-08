@@ -1,15 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import Menu from "./components/Menu"
-import Contact from "./components/Contact"
+import Home from "./components/Home"
+import WebDesignDev from "./components/WebDes&DevProjects"
+import VisualArt from "./components/VisualArtProjects"
+import DigitalArt from "./components/DigArtNGraphDesProjects"
+import Menu from "./components/Menu";
 
 
 function App() {
   return (
-    <div>
-      <Contact />
+    <Router>
       <Menu />
-    </div>
+      <Routes>
+      <Route path="/aboutme" exact elements={<Home/>} />
+        <Route path="/webdesign&development" element={<WebDesignDev/>} />
+     
+        <Route path="/visualart" element={<VisualArt/>} />
+        <Route path="/digitalart" element={<DigitalArt/>} />
+      </Routes>
+    </Router>
   );
 }
 
