@@ -1,6 +1,4 @@
 import React from "react";
-import telegram from "../media/telegram-original.svg";
-import wechat from "../media/wechat.svg";
 
 function Contact() {
   return (
