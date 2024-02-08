@@ -1,0 +1,293 @@
+::selection {
+  background-color: #F15025;
+  /* Change this to the background color you want */
+  color: #fff;
+  /* Change this to the text color you want */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Inconsolata', monospace; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* SIDEBAR */
+
+@media (max-width: 1000px) {
+  .menuLi {
+    display: none;
+    overflow: hidden;
+  }
+  .contactPage{
+    display: none;
+    overflow: hidden;
+  }
+
+  .menuDiv {
+    padding-top: 10%;
+  }
+
+  .introduction {
+    margin-left: 5%;
+  }
+        .projects {
+          margin-left: 5%;
+            width: 90%;
+        }
+                 .projectLine {
+                   margin-left: 5%;
+                 }
+
+}
+
+@media (min-width: 1000px) {
+
+  .projectLine {
+      margin-left: 18%;
+    }
+  .projects {
+      margin-left: 18%;
+        width: 70%;
+    }
+
+.menuDiv{
+  height:100%;
+  padding-top: 7%;
+}
+.menuUl{
+  list-style: none;
+  position: fixed;
+  left: 0;
+  width: 15%;
+
+}
+
+.nameInMenu{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.menuLi{
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.menuA{
+  display: block;
+   text-decoration: none;
+   color: #333;
+      transition: all 0.3s ease;
+      cursor: pointer;
+     
+}
+
+.menuLi:hover{
+  color: #F15025;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeMenu{
+  color:#F15025;
+  background-color: #F15025;
+}
+
+.btn-outline{
+  border-radius: 0%;
+  border-color: #F15025;
+  color:#333;
+  text-align: right;
+}
+
+.btn-outline:hover{
+  background-color: #F15025;
+  color: white;
+}
+
+.introduction{
+  margin-left: 18%;
+}
+
+.contactPage {
+display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 3%;
+  height: 3vh;
+  margin-right: 10%;
+}
+
+.contactPageIcon {
+  width: 4em;
+  height: 1vh;
+}
+
+.contactIcon {
+  width: 2em;
+  height: 2em;
+}
+
+.contactIcon:hover {
+  width: 2.3em;
+  height: 2.3em;
+}
+}
+
+
+/* INTRODUCTION */
+.introduction{
+  margin-bottom: 3%;
+    margin-right: 10%;
+}
+
+.introName{
+  font-weight: bold;
+}
+.aboutMeDiv{
+  margin-top: 5%;
+}
+.segment{
+  color: #F15025;
+}
+
+.aboutMeText{
+  font-weight:300;
+}
+.boldText{
+  font-weight: 600;
+}
+.inTextA{
+  color: #F15025;
+}
+
+.skillsDiv{
+  margin-top: 10%;
+}
+
+.skillsSet{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.skillsSetText{
+  font-size: 1.5rem;
+  font-weight:300;
+}
+
+.skillsImage{
+  width: 50vw;
+}
+
+/* PROJECTS */
+
+.projects{
+  margin-right: 10%;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: 400;
+  padding-bottom: 2%;
+  display: block;
+}
+
+
+.projectDescription {
+  transition: height 0.5s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.expandedProject .projectDescription {
+  height: auto;
+}
+
+
+.projectFirstPart{
+  display: grid;
+  grid-column: 90% 10%;
+}
+
+.projectFirstPartInfo{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.projectFirstPartArrow{
+  grid-row: 1;
+  grid-column: 2;
+  text-align: right;
+}
+
+.button-container {
+  display:block;
+}
+.projectsImages{
+  width: 50vw;
+}
+
+.projectName:hover{
+color: #F15025;
+cursor: pointer;
+ transition: all 0.3s ease;
+}
+.projectDate{
+  /* font-family: 'Montserrat', sans-serif; */
+  color: #F15025;
+  font-weight: 400;
+  font-size: medium;
+}
+
+.projectMedium, .projectRole {
+  font-weight: 800;
+}
+
+.projectLink{
+  color: gray;
+  text-decoration: none;
+  margin-bottom: 1%;
+}
+.projectLink:hover {
+  color: #F15025;
+  text-decoration: #F15025;
+  text-decoration: underline;
+}
+
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.arrow:hover{
+  color:white;
+}
+
+.arrow.rotate{
+  transform: rotate(0deg);
+}
+
+.btn-arrow {
+  background-color: rgb(225, 224, 224);
+  border-color: rgb(225, 224, 224);
+  height: 3.5em;
+    width: 3.5em;
+    border-radius: 0%;
+}
+
+.btn-arrow:hover {
+  background-color: #F15025;
+  border-color: #F15025;
+}
+
+.projectLine {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-right: 10%;
+}
+
+
+/* CONTACT */
+
