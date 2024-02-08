@@ -86,6 +86,9 @@ code {
       cursor: pointer;
      
 }
+.menuA:active{
+  color: white;
+}
 
 .menuLi:hover{
   color: #F15025;
@@ -128,14 +131,15 @@ display: flex;
   height: 1vh;
 }
 
-.contactIcon {
-  width: 2em;
-  height: 2em;
+
+
+.contactIcons{
+  color: #000000;
+  transition: all 0.3s ease;
 }
 
-.contactIcon:hover {
-  width: 2.3em;
-  height: 2.3em;
+.contactIcons:hover{
+  color: #F15025;
 }
 }
 

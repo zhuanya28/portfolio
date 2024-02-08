@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 
 function Project(props) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const handleClick = () => {
     setIsExpanded(!isExpanded);
@@ -22,7 +22,7 @@ function Project(props) {
           </div>
           <div className="projectFirstPartArrow" onClick={handleClick}>
             <button className="btn btn-secondary btn-arrow">
-            <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+            <i class="fa-solid fa-angles-down fa-2xl"></i>
             </button>
           </div>
         </div>

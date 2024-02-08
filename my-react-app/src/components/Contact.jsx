@@ -1,7 +1,5 @@
 import React from "react";
-import linkedIn from "../media/linkedin.svg";
 import telegram from "../media/telegram-original.svg";
-import email from "../media/envelope.svg";
 import wechat from "../media/wechat.svg";
 
 function Contact() {
@@ -14,9 +12,7 @@ function Contact() {
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/zhuanya/"
         >
-          <svg className="contactIcon">
-            <image className="contactIcon" xlinkHref={linkedIn} />
-          </svg>
+          <i class="fa-brands fa-linkedin fa-2xl contactIcons"></i>
         </a>
       </div>
       <div className="contactPageIcon">
@@ -26,9 +22,7 @@ function Contact() {
           rel="noopener noreferrer"
           href="mailto:zhuanya@nyu.edu"
         >
-          <svg className="contactIcon">
-            <image className="contactIcon" xlinkHref={email} />
-          </svg>
+          <i class="fa-solid fa-envelope fa-2xl contactIcons"></i>
         </a>
       </div>
       <div className="contactPageIcon">
@@ -38,9 +32,7 @@ function Contact() {
           rel="noopener noreferrer"
           href="https://t.me/zhuanya14"
         >
-          <svg className="contactIcon">
-            <image className="contactIcon" xlinkHref={telegram} />
-          </svg>
+         <i class="fa-solid fa-paper-plane fa-2xl contactIcons"></i>
         </a>
       </div>
       <div className="contactPageIcon">
@@ -50,9 +42,7 @@ function Contact() {
           rel="noopener noreferrer"
           href="https://drive.google.com/file/d/11S9MyukDqzKQrzuQyfdxfIB1ePn0wm1s/view?usp=sharing"
         >
-          <svg className="contactIcon">
-            <image className="contactIcon" xlinkHref={wechat} />
-          </svg>
+          <i class="fa-brands fa-weixin fa-2xl contactIcons"></i>
         </a>
       </div>
     </div>
