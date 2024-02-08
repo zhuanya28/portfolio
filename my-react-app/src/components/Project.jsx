@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -21,10 +22,7 @@ function Project(props) {
           </div>
           <div className="projectFirstPartArrow" onClick={handleClick}>
             <button className="btn btn-secondary btn-arrow">
-{/* 
-<FontAwesomeIcon icon="fa-solid fa-chevron-up"   size="2xl"
-                className={`arrow ${isExpanded ? "rotate" : ""}`}
-/> */}
+            <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
             </button>
           </div>
         </div>
