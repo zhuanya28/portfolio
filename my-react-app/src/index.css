@@ -17,127 +17,19 @@ code {
 }
 
 
-/* SIDEBAR */
-
-
-
-
-/* @media (max-width: 1000px) {
-  .menuLi {
-    display: none;
-    overflow: hidden;
-  }
-  .contactPage{
-    display: none;
-    overflow: hidden;
-  }
-
-  .menuDiv {
-    padding-top: 10%;
-  }
-
-  .introduction {
-    margin-left: 5%;
-  }
-        .projects {
-          margin-left: 5%;
-            width: 100%;
-        }
-                 .projectLine {
-                   margin-left: 5%;
-                 }
-
+/* MENU */
+.navbar-dark{
+  background-color: #12372A;
 }
 
-@media (min-width: 1000px) {
-
-  .projectLine {
-      margin-left: 18%;
-    }
-  .projects {
-      margin-left: 18%;
-        width: 70%;
-    }
-
-.menuDiv{
-  height:100%;
-  padding-top: 7%;
-}
-.menuUl{
-  list-style: none;
-  position: fixed;
-  left: 0;
-  width: 15%;
-
-}
-
-.nameInMenu{
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-.menuLi{
-  margin-bottom: 10px;
-  text-align: right;
-}
-
-.menuA{
-  display: block;
-   text-decoration: none;
-   color: #333;
-      transition: all 0.3s ease;
-      cursor: pointer;
-     
-}
-.menuA:active{
+.menu-items{
   color: white;
+  text-decoration: none;;
 }
-
-.menuLi:hover{
-  color: #F15025;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.menu-items:active{
+  color: #ADBC9F;
+  text-decoration: none;;
 }
-
-.activeMenu{
-  color:#F15025;
-  background-color: #F15025;
-}
-
-.btn-outline{
-  border-radius: 0%;
-  border-color: #F15025;
-  color:#333;
-  text-align: right;
-}
-
-.btn-outline:hover{
-  background-color: #F15025;
-  color: white;
-}
-
-.introduction{
-  margin-left: 18%;
-}
-
-.contactPage {
-display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 3%;
-  height: 3vh;
-  margin-right: 10%;
-}
-
-.contactPageIcon {
-  width: 4em;
-  height: 1vh;
-}
-
-
-}
-
-
 /* INTRODUCTION */
 .introduction{
   margin: 5%;
@@ -244,6 +136,7 @@ cursor: pointer;
   text-decoration: none;
   margin-bottom: 1%;
 }
+
 .projectLink:hover {
   color: #F15025;
   text-decoration: #F15025;
@@ -279,7 +172,8 @@ cursor: pointer;
 .projectLine {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
-  margin-right: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 
@@ -287,10 +181,10 @@ cursor: pointer;
 
 
 .contactIcons{
-  color: #000000;
+  color: #ADBC9F;
   transition: all 0.3s ease;
 }
 
 .contactIcons:hover{
-  color: #F15025;
+  color: white;
 }

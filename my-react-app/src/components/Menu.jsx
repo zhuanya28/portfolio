@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 
 function Menu() {
   return (
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <h1 class="navbar-brand m-5">ZHUANYA</h1>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <a class="navbar-brand m-2" href="#">ZHUANYA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
       <ul class="menuList navbar-nav">
         <li class="nav-item active nav-link"><Link to="/">Home</Link></li>
-        <li class="nav-item nav-link"><Link to="/webdesign&development">Web Design & Dev</Link></li>
-        <li class="nav-item nav-link"><Link to="/visualart">Visual Art</Link></li>
-        <li class="nav-item nav-link"><Link to="/digitalart">Digital Art</Link></li>
+        <li class="nav-item nav-link"><Link  class="menu-items"to="/webdesign&development">Web Design & Dev</Link></li>
+        <li class="nav-item nav-link"><Link  class="menu-items"to="/visualart">Visual Art</Link></li>
+        <li class="nav-item nav-link"><Link class="menu-items"to="/digitalart">Digital Art</Link></li>
         <li class="nav-item contactList">
-
           <a class="nav-link" href="https://www.linkedin.com/in/zhuanya/" target="_blank"
             rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl contactIcons" /></a>
         </li>
@@ -20,7 +22,6 @@ function Menu() {
           <a class="nav-link" target="_blank"
             rel="noopener noreferrer"
             href="mailto:zhuanya@nyu.edu"> <i class="fa-solid fa-envelope fa-2xl contactIcons" ></i></a>
-
         </li>
         <li class="nav-item contactList">
           <a class="nav-link" target="_blank"
