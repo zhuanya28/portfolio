@@ -17,9 +17,9 @@ function Project(props) {
             <h5 className="projectRole">{props.role}</h5>
             <h5 className="projectMedium">{props.medium}</h5>
           </div>
-          <div className="projectFirstPartArrow" onClick={handleClick}>
+          <div className={`projectFirstPartArrow ${isExpanded ? "active" : ""}`} onClick={handleClick}>
             <button className="btn btn-secondary btn-arrow">
-            <i class="fa-solid fa-angles-down fa-2xl arrow"></i>
+            <i class={`fa-solid fa-angles-down fa-2xl arrow ${isExpanded ? "rotate" : ""}`}></i>
             </button>
           </div>
         </div>

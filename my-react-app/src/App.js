@@ -15,8 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/webdesign&development" element={<WebDesignDev/>} />
-        <Route path="/visualart" element={<VisualArt/>} />
         <Route path="/digitalart" element={<DigitalArt/>} />
+        <Route path="/visualart" element={<VisualArt/>} />
+    
       </Routes>
     </Router>
   );

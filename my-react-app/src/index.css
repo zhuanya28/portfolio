@@ -45,6 +45,13 @@ code {
 
 }
 
+.menu-items.active{
+  color:#FAF0E6;
+  transition: all 0.3s ease;
+  text-decoration:line-through;
+
+}
+
 .menu-items:active{
   color:#FAF0E6;
   text-decoration: none;

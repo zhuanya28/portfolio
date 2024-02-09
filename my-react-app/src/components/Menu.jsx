@@ -1,21 +1,27 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Menu() {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
   return (
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">zhuanya28</a>
+        <a class="navbar-brand" href="/">zhuanya28</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="menuList navbar-nav mx-auto">
-            <li class="nav-item nav-link"><Link class="menu-items" to="/">Home</Link></li>
-            <li class="nav-item nav-link"><Link class="menu-items" to="/webdesign&development">Web Design & Dev</Link></li>
-            <li class="nav-item nav-link"><Link class="menu-items" to="/visualart">Visual Art</Link></li>
-            <li class="nav-item nav-link"><Link class="menu-items" to="/digitalart">Digital Art</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/") ? "active" : ""}`} to="/">Home</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/webdesign&development") ? "active" : ""}`} to="/webdesign&development">Web Design & Dev</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/digitalart") ? "active" : ""}`} to="/digitalart">Digital Art</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/visualart") ? "active" : ""}`} to="/visualart">Visual Art</Link></li>
+   
           </ul>
 
           <ul class="navbar-nav justify-content-end">
