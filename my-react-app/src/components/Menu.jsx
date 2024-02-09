@@ -10,10 +10,12 @@ function Menu() {
     <span class="navbar-toggler-icon"></span>
   </button>
       <ul class="menuList navbar-nav">
-        <li class="nav-item active nav-link"><Link to="/">Home</Link></li>
+        <li class="nav-item nav-link"><Link to="/">Home</Link></li>
         <li class="nav-item nav-link"><Link  class="menu-items"to="/webdesign&development">Web Design & Dev</Link></li>
         <li class="nav-item nav-link"><Link  class="menu-items"to="/visualart">Visual Art</Link></li>
         <li class="nav-item nav-link"><Link class="menu-items"to="/digitalart">Digital Art</Link></li>
+        </ul>
+        <ul class="menuList navbar-nav navbar-text">
         <li class="nav-item contactList">
           <a class="nav-link" href="https://www.linkedin.com/in/zhuanya/" target="_blank"
             rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl contactIcons" /></a>
