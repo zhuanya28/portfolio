@@ -29,6 +29,10 @@ code {
   background-color: #352F44;
 }
 
+.navbar-brand{
+  color:#B9B4C7;
+  font-weight: 800;
+}
 .menu-items{
   color: #FAF0E6;
     transition: all 0.3s ease;
@@ -173,7 +177,7 @@ cursor: pointer;
 }
 
 .projectLink{
-  color: gray;
+  color: #5C5470;
   text-decoration: none;
   margin-bottom: 1%;
 }
@@ -186,6 +190,7 @@ cursor: pointer;
 
 
 .arrow {
+  color:#5C5470;
   transform: rotate(90deg);
 }
 

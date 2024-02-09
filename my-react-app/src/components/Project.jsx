@@ -19,7 +19,7 @@ function Project(props) {
           </div>
           <div className="projectFirstPartArrow" onClick={handleClick}>
             <button className="btn btn-secondary btn-arrow">
-            <i class="fa-solid fa-angles-down fa-2xl"></i>
+            <i class="fa-solid fa-angles-down fa-2xl arrow"></i>
             </button>
           </div>
         </div>
