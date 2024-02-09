@@ -5,38 +5,43 @@ import { Link } from 'react-router-dom';
 function Menu() {
   return (
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-      <a class="navbar-brand m-2" href="#">ZHUANYA</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-      <ul class="menuList navbar-nav">
-        <li class="nav-item nav-link"><Link to="/">Home</Link></li>
-        <li class="nav-item nav-link"><Link  class="menu-items"to="/webdesign&development">Web Design & Dev</Link></li>
-        <li class="nav-item nav-link"><Link  class="menu-items"to="/visualart">Visual Art</Link></li>
-        <li class="nav-item nav-link"><Link class="menu-items"to="/digitalart">Digital Art</Link></li>
-        </ul>
-        <ul class="menuList navbar-nav navbar-text">
-        <li class="nav-item contactList">
-          <a class="nav-link" href="https://www.linkedin.com/in/zhuanya/" target="_blank"
-            rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2xl contactIcons" /></a>
-        </li>
-        <li class="nav-item contactList">
-          <a class="nav-link" target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:zhuanya@nyu.edu"> <i class="fa-solid fa-envelope fa-2xl contactIcons" ></i></a>
-        </li>
-        <li class="nav-item contactList">
-          <a class="nav-link" target="_blank"
-            rel="noopener noreferrer" href="https://t.me/zhuanya14">
-            <i class="fa-solid fa-paper-plane fa-2xl contactIcons"/>
-          </a>
-        </li>
-        <li class="nav-item contactList">
-          <a class="nav-link" target="_blank"
-            rel="noopener noreferrer" href="https://drive.google.com/file/d/11S9MyukDqzKQrzuQyfdxfIB1ePn0wm1s/view?usp=sharing">
-          <i class="fa-brands fa-weixin fa-2xl contactIcons" ></i></a>
-        </li>
-      </ul>
+      <div class="container">
+        <a class="navbar-brand" href="#">ZHUANYA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="menuList navbar-nav mx-auto">
+            <li class="nav-item nav-link"><Link class="menu-items" to="/">Home</Link></li>
+            <li class="nav-item nav-link"><Link class="menu-items" to="/webdesign&development">Web Design & Dev</Link></li>
+            <li class="nav-item nav-link"><Link class="menu-items" to="/visualart">Visual Art</Link></li>
+            <li class="nav-item nav-link"><Link class="menu-items" to="/digitalart">Digital Art</Link></li>
+          </ul>
+
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/zhuanya/" target="_blank"
+                rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-xl contactIcons" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:zhuanya@nyu.edu"> <i class="fa-solid fa-envelope fa-xl contactIcons" ></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank"
+                rel="noopener noreferrer" href="https://t.me/zhuanya14">
+                <i class="fa-solid fa-paper-plane fa-xl contactIcons" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank"
+                rel="noopener noreferrer" href="https://drive.google.com/file/d/11S9MyukDqzKQrzuQyfdxfIB1ePn0wm1s/view?usp=sharing">
+                <i class="fa-brands fa-weixin fa-xl contactIcons" ></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }

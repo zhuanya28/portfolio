@@ -28,7 +28,7 @@ function Home() {
           >
             New York University Shanghai
           </a>
-          , currently based in 📍 New York.{" "}
+          , currently based in {" "}<span className="boldText">📍 New York.</span>{" "}
         </h4>
         <br />
         <h4 className="aboutMeText">

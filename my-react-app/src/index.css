@@ -1,7 +1,14 @@
+
+/* COLOR PALETTE
+#FAF0E6
+#B9B4C7
+#5C5470
+#352F44 */
+
 ::selection { 
-  background-color: #F15025;
+  background-color: #352F44;
   /* Change this to the background color you want */
-  color: #fff;
+  color: #FAF0E6;
   /* Change this to the text color you want */
 }
 
@@ -19,30 +26,55 @@ code {
 
 /* MENU */
 .navbar-dark{
-  background-color: #12372A;
+  background-color: #352F44;
 }
 
 .menu-items{
-  color: white;
+  color: #FAF0E6;
+    transition: all 0.3s ease;
   text-decoration: none;;
 }
+.menu-items:hover{
+  color:#B9B4C7;
+  transition: all 0.3s ease;
+  text-decoration:line-through;
+
+}
+
 .menu-items:active{
-  color: #ADBC9F;
-  text-decoration: none;;
+  color:#FAF0E6;
+  text-decoration: none;
+
 }
+
+
+.contactIcons{
+  color: #B9B4C7;
+  transition: all 0.3s ease;
+}
+
+.contactIcons:hover{
+  color: #FAF0E6;
+}
+
+
+
+
 /* INTRODUCTION */
 .introduction{
+
   margin: 5%;
+  margin-top: 2%;
 }
 
 .introName{
   font-weight: bold;
 }
 .aboutMeDiv{
-  margin-top: 5%;
+  margin-top: 4%;
 }
 .segment{
-  color: #F15025;
+  color: #5C5470;
 }
 
 .aboutMeText{
@@ -51,8 +83,12 @@ code {
 .boldText{
   font-weight: 600;
 }
+
+.boldText:hover{
+  color:#352F44;
+}
 .inTextA{
-  color: #F15025;
+  color: #5C5470;
 }
 
 .skillsDiv{
@@ -73,6 +109,7 @@ code {
 
 .projects{
  margin: 5%;
+ margin-top: 2%;
   /* font-family: 'Montserrat', sans-serif; */
   font-weight: 400;
 
@@ -115,14 +152,18 @@ code {
   align-content: center;
 }
 
+.projectName{
+  font-weight: bold;
+}
 .projectName:hover{
-color: #F15025;
+color: #352F44;
+text-decoration:line-through;
 cursor: pointer;
  transition: all 0.3s ease;
 }
 .projectDate{
   /* font-family: 'Montserrat', sans-serif; */
-  color: #F15025;
+  color: #5C5470;
   font-weight: 400;
   font-size: medium;
 }
@@ -138,8 +179,8 @@ cursor: pointer;
 }
 
 .projectLink:hover {
-  color: #F15025;
-  text-decoration: #F15025;
+  color: #B9B4C7;
+  text-decoration: #B9B4C7;
   text-decoration: underline;
 }
 
@@ -149,7 +190,7 @@ cursor: pointer;
 }
 
 .arrow:hover{
-  color:white;
+  color:#FAF0E6;
 }
 
 .arrow.rotate{
@@ -165,8 +206,8 @@ cursor: pointer;
 }
 
 .btn-arrow:hover {
-  background-color: #F15025;
-  border-color: #F15025;
+  background-color: #B9B4C7;
+  border-color: #B9B4C7;
 }
 
 .projectLine {
@@ -180,11 +221,3 @@ cursor: pointer;
 /* CONTACT */
 
 
-.contactIcons{
-  color: #ADBC9F;
-  transition: all 0.3s ease;
-}
-
-.contactIcons:hover{
-  color: white;
-}
