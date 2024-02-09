@@ -5,8 +5,9 @@ import Home from "./components/Home";
 import WebDesignDev from "./components/WebDes&DevProjects";
 import VisualArt from "./components/VisualArtProjects";
 import DigitalArt from "./components/DigArtNGraphDesProjects";
+import CV from "./components/Cv";
 import Menu from "./components/Menu";
-import CV from "./components/CV";
+
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/webdesign&development" element={<WebDesignDev/>} />
         <Route path="/digitalart" element={<DigitalArt/>} />
         <Route path="/visualart" element={<VisualArt/>} />
-        <Route path="/CV" element={<CV/>} />
+        <Route path="/cv" element={<CV/>} />
     
       </Routes>
     </Router>
