@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
-import Home from "./components/Home"
-import WebDesignDev from "./components/WebDes&DevProjects"
-import VisualArt from "./components/VisualArtProjects"
-import DigitalArt from "./components/DigArtNGraphDesProjects"
+import Home from "./components/Home";
+import WebDesignDev from "./components/WebDes&DevProjects";
+import VisualArt from "./components/VisualArtProjects";
+import DigitalArt from "./components/DigArtNGraphDesProjects";
 import Menu from "./components/Menu";
+import CV from "./components/CV";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/webdesign&development" element={<WebDesignDev/>} />
         <Route path="/digitalart" element={<DigitalArt/>} />
         <Route path="/visualart" element={<VisualArt/>} />
+        <Route path="/CV" element={<CV/>} />
     
       </Routes>
     </Router>

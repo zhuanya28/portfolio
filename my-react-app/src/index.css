@@ -40,8 +40,9 @@ code {
 }
 .menu-items:hover{
   color:#B9B4C7;
-  transition: all 0.3s ease;
+
   text-decoration:line-through;
+  transition: all 0.3s ease;
 
 }
 
