@@ -22,8 +22,19 @@ import diptychAbuDhabi from "./media/diptych-final.jpg";
 import itemsToBorrowFromTheRCPoster from "./media/items-to-borrow-from-RC.png";
 import linenPurchasePoster from "./media/linen-purchase-poster.png";
 import changellengeEducationCase from "./media/challenge-enducation-case.png";
+import equiForma from "./media/equi-forma.jpg";
 
 export const webDevNDes = [
+  {
+    id: 6,
+    name: "EquiForma",
+    date: "october 2023 – december 2023",
+    role: "p5.js, ml5.js, HTML, CSS",
+    media: equiForma,
+    description:
+      "for a Product Management class at NYU Shanghai, I created a prototype app that utilizes ml5.js Pose detection model as well as OpenAI API to give feedback on the person's squatting technique.",
+    link: "https://drive.google.com/file/d/1fKciykyfoCGrwHwN280gawj5Na83i11g/view?usp=share_link",
+  },
   {
     id: 5,
     name: "!MIRROR",
