@@ -15,11 +15,11 @@ function App() {
     <Router>
       <Menu />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/webdesign&development" element={<WebDesignDev/>} />
-        <Route path="/digitalart" element={<DigitalArt/>} />
-        <Route path="/visualart" element={<VisualArt/>} />
-        <Route path="/cv" element={<CV/>} />
+        <Route path="/portfolio/" element={<Home/>} />
+        <Route path="/portfolio/webdesign&development" element={<WebDesignDev/>} />
+        <Route path="/portfolio/digitalart" element={<DigitalArt/>} />
+        <Route path="/portfolio/visualart" element={<VisualArt/>} />
+        <Route path="/portfolio/cv" element={<CV/>} />
     
       </Routes>
     </Router>
