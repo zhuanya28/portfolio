@@ -17,11 +17,10 @@ function Menu() {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="menuList navbar-nav mx-auto">
-            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/") ? "active" : ""}`} to="/portfolio/">Home</Link></li>
-            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/webdesign&development") ? "active" : ""}`} to="/webdesign&development">Web Design & Dev</Link></li>
-            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/digitalart") ? "active" : ""}`} to="/digitalart">Digital Art</Link></li>
-            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/visualart") ? "active" : ""}`} to="/visualart">Visual Art</Link></li>
-            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/cv") ? "active" : ""}`} to="/cv">CV</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/") ? "active" : ""}`} to="/portfolio/">Home</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/digitalart") ? "active" : ""}`} to="/portfolio/digitalart">Digital Art</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/visualart") ? "active" : ""}`} to="/portfolio/visualart">Visual Art</Link></li>
+            <li class="nav-item nav-link"><Link class={`menu-items ${isActive("/portfolio/cv") ? "active" : ""}`} to="/portfolio/cv">CV</Link></li>
    
           </ul>
 
