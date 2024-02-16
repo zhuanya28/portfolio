@@ -49,7 +49,7 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="inTextA"
-            href="https://drive.google.com/file/d/1ylZsx8a5YqT3r9iVDYC5Ds7nvpIBafbf/view?usp=sharing"
+            href="https://drive.google.com/file/d/1buCv93p1V7oeaK_rX7KVqS-qsrAj1Ppy/view?usp=share_link"
           >
             CV
           </a>
