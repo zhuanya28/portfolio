@@ -23,6 +23,7 @@ import itemsToBorrowFromTheRCPoster from "./media/items-to-borrow-from-RC.png";
 import linenPurchasePoster from "./media/linen-purchase-poster.png";
 import changellengeEducationCase from "./media/challenge-enducation-case.png";
 import equiForma from "./media/equi-forma.jpg";
+import whisperedHues from "./media/whispered-hues.png"
 
 export const webDevNDes = [
   {
@@ -87,6 +88,16 @@ export const webDevNDes = [
 ];
 
 export const digitalArtNGraphDesign = [
+  {
+    id: 14,
+    name: "Whispered Hues",
+    date: "november 2023",
+    role: "InDesign, Digital Photography",
+    media: whisperedHues,
+    description:
+      "photobook conveying semivisibility of queer experience.",
+    link: "https://drive.google.com/file/d/1XHjFa48OhGPV4_av_H9pR6chxcvIQVzQ/view?usp=share_link"
+  },
   {
     id: 13,
     name: "Poster: Linen Purchase",
