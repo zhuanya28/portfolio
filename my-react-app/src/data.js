@@ -25,6 +25,8 @@ import changellengeEducationCase from "./media/challenge-enducation-case.png";
 import equiForma from "./media/equi-forma.jpg";
 import whisperedHues from "./media/whispered-hues.png"
 import coralReefs from "./media/coral-reefs.png"
+import nyuadPerformingArtsPoster from "./media/nyuad-performing-arts-poster.png"
+import nyuadNationalDayPoster from "./media/nyuad-national-day.jpg"
 
 export const webDevNDes = [
   {
@@ -99,8 +101,18 @@ export const webDevNDes = [
 ];
 
 export const digitalArtNGraphDesign = [
+
   {
-    id: 14,
+    id: 16,
+    name: "NYUAD Performing Arts Info Session",
+    date: "november 2023",
+    role: "InDesign, Figma",
+    media: nyuadPerformingArtsPoster,
+    description:
+      "when working for New York Abu Dhabi Global Outreach Office I have created this poster to attract more NYU Shanghai students to attend a Performing Arts Information Session."
+  },
+  {
+    id: 15,
     name: "Whispered Hues",
     date: "november 2023",
     role: "InDesign, Digital Photography",
@@ -108,6 +120,15 @@ export const digitalArtNGraphDesign = [
     description:
       "photobook conveying semivisibility of queer experience.",
     link: "https://drive.google.com/file/d/1XHjFa48OhGPV4_av_H9pR6chxcvIQVzQ/view?usp=share_link"
+  },
+  {
+    id: 14,
+    name: "National UAE Day",
+    date: "october 2023",
+    role: "Figma, Canva",
+    media: nyuadNationalDayPoster,
+    description:
+      "when working for New York Abu Dhabi Global Outreach Office I have created this poster to attract more NYU Shanghai students to attend the National UAE Day celebration."
   },
   {
     id: 13,
