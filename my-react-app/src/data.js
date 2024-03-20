@@ -24,8 +24,19 @@ import linenPurchasePoster from "./media/linen-purchase-poster.png";
 import changellengeEducationCase from "./media/challenge-enducation-case.png";
 import equiForma from "./media/equi-forma.jpg";
 import whisperedHues from "./media/whispered-hues.png"
+import coralReefs from "./media/coral-reefs.png"
 
 export const webDevNDes = [
+  {
+    id: 7,
+    name: "Coral Reefs Gone Wild",
+    date: "march 2024",
+    role: "p5.js, HTML, CSS",
+    media: coralReefs,
+    description:
+      "inspired by movement patterns of coral reefs, this project utilizes coding techniques & physics to mimic the organic movements.",
+    link: "https://editor.p5js.org/zhuanya28/full/YtedjLJwr",
+  },
   {
     id: 6,
     name: "EquiForma",
